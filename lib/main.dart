@@ -35,12 +35,12 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
-  @override
+  /*@override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
 
-        title: Text(widget.title),
+        title: Text("Devil May Cry 5"),
       ),
       body: Center(
 
@@ -71,6 +71,97 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           ),
         )
+          ],
+        ),
+      ),
+      // This trailing comma makes auto-formatting nicer for build methods.
+    );
+  }*/
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+
+        title: Text("Inscription"),
+      ),
+      body: Center(
+
+        child: Column(
+          //mainAxisAlignment: MainAxisAlignment.center,
+          children:
+          [
+            Image.asset("assets/images/minecraft.jpg",width: 350,height: 200,),
+            Container(
+              margin: const EdgeInsets.fromLTRB(10, 10, 10, 50),
+
+              child: Column(
+
+                children: [
+              TextField(
+              decoration: const InputDecoration(
+              border: OutlineInputBorder(),
+                hintText: 'Username'
+            ),
+                      ),
+                  SizedBox(height: 10,),
+                  TextField(
+
+                    decoration: const InputDecoration(
+                        border: OutlineInputBorder(),
+                        hintText: 'Email'
+                    ),
+                  ),
+                  SizedBox(height: 10,),
+                  TextField(
+                    decoration: const InputDecoration(
+                        border: OutlineInputBorder(),
+                        hintText: 'Mot de Passe'
+                    ),
+                  ),
+                  SizedBox(height: 10,),
+                  TextField(
+                    decoration: const InputDecoration(
+                        border: OutlineInputBorder(),
+                        hintText: 'Année de naissance'
+                    ),
+                  ),
+                  SizedBox(height: 10,),
+                  TextField(
+                    decoration: const InputDecoration(
+                        border: OutlineInputBorder(),
+                        hintText: 'Adresse de facturation'
+                    ),
+                  ),
+                  SizedBox(height: 10,),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      ElevatedButton.icon(
+                        icon: Icon(
+                          Icons.shopping_basket,
+                          color: Colors.blue,
+                          size: 0,
+                        ),
+                        label: Text('S`incrire'),
+                        onPressed: () {},
+                      ),
+                      SizedBox(width: 10,),
+                      ElevatedButton.icon(
+                        icon: Icon(
+                          Icons.shopping_basket,
+                          color: Colors.blue,
+                          size: 0,
+                        ),
+                        label: Text('Annuler'),
+                        onPressed: () {},
+                      ),
+                    ],
+                  )
+                ],
+              ),
+            ),
+
+
           ],
         ),
       ),
