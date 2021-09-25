@@ -35,6 +35,14 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
+
+
+  // Les deux pages du devoir sont ici, la première ci-dessous est commentée, la seconde s'exécutera en premier
+
+
+//première page  |
+//               v
+
   /*@override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -77,6 +85,13 @@ class _MyHomePageState extends State<MyHomePage> {
       // This trailing comma makes auto-formatting nicer for build methods.
     );
   }*/
+
+
+  //deuxième page |
+//                v
+
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
