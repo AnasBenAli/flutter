@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'product_info.dart';
+import 'product_bloc.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -27,6 +28,7 @@ Widget build(BuildContext context) {
     ),
     body: ListView(
       children: const [
+        ProductBloc("assets/images/minecraft.jpg", "Minecraft")
       ],
     ),
   );
