@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.monem.gamix2122.workshop_gamix2122">
+    package="com.esprit.workshop1.workshop1">
    <application
-        android:label="workshop_gamix2122"
+        android:label="workshop1"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

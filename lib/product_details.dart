@@ -1,54 +1,76 @@
 import 'package:flutter/material.dart';
 
 class ProductDetails extends StatelessWidget {
+  final String Title;
   final String _image;
-  final String _title;
-  final String _description;
   final int _price;
+  final String _Desc;
 
-  const ProductDetails(
-      this._image, this._title, this._description, this._price, {Key? key}) : super(key: key);
+  ProductDetails(this._image, this._price, this._Desc,this.Title);
+
+
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(_title),
+    return Container(
+
+child: Column(
+    crossAxisAlignment: CrossAxisAlignment.center,
+
+children: [
+
+  Container(
+      alignment: AlignmentDirectional.topCenter,
+      width:500,
+      height:600,
+      margin: const  EdgeInsets.fromLTRB(15,20,15,15),
+
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
+    children: [
+
+      Image.asset(_image),
+      const SizedBox(
+        height: 20,
+
       ),
-      body: Column(
-        children: [
-          Container(
-            width: double.infinity,
-            margin: const EdgeInsets.fromLTRB(20, 0, 20, 20),
-            child: Image.asset(_image, width: 460, height: 215)
-          ),
-          Container(
-            margin: const EdgeInsets.fromLTRB(20, 0, 20, 50),
-            child: Text(_description),
-          ),
-          Text(_price.toString() + " TND", textScaleFactor: 3),
-          const SizedBox(
-            height: 50,
-          ),
-          SizedBox(
-            width: 200,
-            height: 50,
-            child: ElevatedButton(
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: const [
-                  Icon(Icons.shopping_basket_rounded),
-                  SizedBox(
-                    width: 10,
-                  ),
-                  Text("Acheter", textScaleFactor: 2)
-                ],
-              ),
-              onPressed: () {},
-            ),
-          )
-        ],
+      Text(_Desc,textScaleFactor:1, textAlign:TextAlign.center,),
+      const SizedBox(
+        height: 60,
+
       ),
+      Text(_price.toString()+"TND",textScaleFactor: 2.5,),
+      const SizedBox(
+        height:45,
+
+      ),
+      ElevatedButton.icon(onPressed: () {
+        print("pressed");
+
+      }, icon: Icon(
+        Icons.account_balance_wallet_sharp,
+        color: Colors.white,
+        size: 24.0,
+      ),label: Text('Acheter'), style: ElevatedButton.styleFrom(
+
+          padding: EdgeInsets.symmetric(horizontal: 40, vertical: 10),
+          textStyle: TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.bold)),)
+    ],
+  )
+     ),
+
+
+
+
+
+],
+
+
+
+),
+
     );
   }
 }

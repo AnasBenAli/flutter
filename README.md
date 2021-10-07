@@ -1,6 +1,6 @@
-# workshop_gamix2122
+# workshop1
 
-Workshop 4GamiX 2122
+A new Flutter project.
 
 ## Getting Started
 

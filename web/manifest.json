@@ -1,6 +1,6 @@
 {
-    "name": "workshop_gamix2122",
-    "short_name": "workshop_gamix2122",
+    "name": "workshop1",
+    "short_name": "workshop1",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

@@ -1,4 +1,4 @@
-package com.monem.gamix2122.workshop_gamix2122
+package com.esprit.workshop1.workshop1
 
 import io.flutter.embedding.android.FlutterActivity
 
