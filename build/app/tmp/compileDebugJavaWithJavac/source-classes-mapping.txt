@@ -1,0 +1,4 @@
+io/flutter/plugins/GeneratedPluginRegistrant.java
+ io.flutter.plugins.GeneratedPluginRegistrant
+com/monem/gamix2122/workshop_gamix2122/BuildConfig.java
+ com.monem.gamix2122.workshop_gamix2122.BuildConfig
